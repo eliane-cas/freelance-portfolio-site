@@ -1,0 +1,28 @@
+.pricing_grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  align-content: space-between;
+  justify-content: center;
+  grid-gap: 4rem;
+
+  width: 90%;
+}
+
+.pricing_card {
+  border: 2px solid grey;
+  background-color: beige;
+  border-radius: 2rem;
+  padding: 5rem 3rem;
+  // width: 30%;
+  min-width: 250px;
+  transition: all 0.2s ease-in-out;
+
+  &:not(:last-of-type) {
+    margin-right: auto;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 12px 5px var(--color-primary);
+  }
+}
